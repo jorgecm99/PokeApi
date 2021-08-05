@@ -1,0 +1,162 @@
+@import './colors';
+@import './fonts';
+
+/*.container {
+    margin: 0;
+    padding: 0;
+}*/
+
+
+
+
+
+.pokeball {
+    background-image: url('../assets/pokemon_PNG144.png');
+    background-size: 100%;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+
+}
+
+.pokemonStyle {
+    h4 {
+        font-size: 2rem;
+        color: $page-color;
+    }
+    background-color: $another-color;
+    width: 30%;
+    /*: 180;*/
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-family: $font-third;
+    font-weight: bold;
+}
+
+.pokeImage {
+    width: 60%;
+}
+
+//cabecera//
+
+.pokemon_history {
+    h1 {
+        color: $another-color;
+        font-size: 60px;
+        margin: 0 0;
+        text-transform: uppercase;
+        font-family: $font-primary;
+    }
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    justify-content: center;
+    align-items: center;
+}
+
+//LISTA DE POKEMONS//
+
+
+.randomContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.flex-item {
+    cursor: pointer;
+    width: 60%;
+    max-width: 460px;
+    background-color: rgb(251, 255, 0);
+    font-family: $font-third;
+    opacity: 80%;
+    list-style: none;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.flex-item-title {
+    padding: 8px auto;
+}
+
+
+
+
+//cita inicial//
+
+
+
+.card{
+    ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        
+
+        li {
+            list-style: none;
+            width: 90px;
+            
+        }
+    }
+    /*height: 400px;*/
+    width: 60%;
+    background-color:#091021;
+    position: relative;
+    border-radius: 8px;
+    margin: 0 auto;
+   }
+
+.imageIntro {
+    width: 100%;
+    min-width: 160px;
+    opacity: 0.7;
+    margin-left: -75px;
+}
+
+
+.fa-quote-right {
+    color:rgba(255,255,255,0.1);
+    font-size: 90px;
+    position:relative;
+    top:10px;
+    margin-left: -15px;
+}
+
+
+
+.text{
+    color:rgba(255,255,255,0.1);
+    position: relative;
+    font-size: 20px;
+    font-family: 'Work Sans',sans-serif;
+    margin: 0 12px 0 12px;
+    line-height: 28px;
+ }
+
+
+.card:hover{
+    box-shadow:0 10px 10px 2px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+.card:hover .fa1{
+    background:transparent;
+}
+
+.card:hover .text, .fa-quote-right:hover {
+    color: $text-color;
+ }
+
+
+
+
+

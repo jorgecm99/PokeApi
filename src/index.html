@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Englebert&family=Gamja+Flower&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link
+    
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"
+      
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    >
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <!-- Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    >
+  </head>
+
+  <body id="body">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
+      <div id="mainButton" class="dropdown-content">
+        <a href="#home">History</a>
+        <a href="#about">Characters</a>
+        <a href="#contact">About</a>
+      </div>
+      <script>
+        function myFunction() {
+	        document.getElementById("mainButton").classList.toggle("show");
+        }
+  
+  
+       window.onclick = function(event) {
+	      if (!event.target.matches('.dropbtn')) {
+	        var dropdowns = document.getElementsByClassName("dropdown-content");
+	        var i;
+	        for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		    if (openDropdown.classList.contains('show')) {
+		      openDropdown.classList.remove('show');
+		     }
+	      }
+	    }
+    }
+    </script>
+
+    </div>
+
+    <div class="randomButton">
+      <button id="randomPokemon" class="btn btn-link randomBall" type="button"></button>
+    </div>
+  
+      <div class="find-container">
+        <input id="pokeName" class="find">
+        <button id="pokeFinder" class="find-button">Go!</button>
+        <div id="container"></div>
+      </div>      
+    </header>
+
+    <!-- Intro -->
+    
+
+    <!-- Loader -->
+
+    <section id="loader" class="loader is-hidden">
+      <div class="pokeballLoader c-loader u-flash"></div>
+    </section>
+
+
+
+    <!-- Contenido -->
+
+    <div class="pokemon_history">
+      <h1>Pokedex</h1>
+      <button id="allPokemons" class="btn btn-link pokeball" type="button"></button>
+    </div>
+
+    <section class="randomAndDetail">
+      <div id="randomContainer" class="randomContainer"></div>
+    </section>
+
+    <main class="main">
+      <div class="container">
+        <div class="pokeball-container">
+          <div class="card">
+            <ul>
+              <li><i class="fa1 fa fa-quote-right" aria-hidden="true"></i></li>
+              <li><img class="imageIntro" src="../src/app/assets/pokemon_PNG107.png" alt=""></li>
+            </ul>
+            <div class="text">
+              Pokémon is short for “Pocket Monsters", the original Japanese name. 
+              The franchise has its roots in a gaming magazine in the early 1980s in 
+              Japan—Game Freak, started by Satoshi Tajiri and Ken Sugimori. Tajiri 
+              was the writer, while Sugimori was the illustrator.
+            </div>
+         </div>
+          
+
+
+        <ul id="pokedex" class="flex-container wrap"></ul>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <h4 class="footer_style"">jorgeCórcolesMurillo<span>frontEndDeveloper</span> </h4>
+    </footer>
+  </body>
+</html>

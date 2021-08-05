@@ -1,0 +1,25 @@
+footer {
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;    
+    
+
+}
+
+h4 span {
+    transition: 0.5s;
+}
+
+h4:hover span {
+    margin-right: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+}

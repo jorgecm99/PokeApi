@@ -1,0 +1,18 @@
+@import '../styles/sections';
+@import '../styles/header';
+@import '../styles/footer';
+@import '../styles/responsive';
+@import '../styles/colors';
+@import '../styles/fonts';
+@import '../styles/animation';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(36, 83, 99);
+}
